@@ -1,0 +1,72 @@
+
+div{
+	/* css параметр;
+	css параметр;
+	css параметр; */
+}
+
+.fontsize{
+	font-size: 20px;
+}
+
+a{
+	color: darkgreen;
+}
+
+.logo {
+	color: blue;
+}
+.main {
+}
+.text {
+	color: green;
+}
+
+.selector-text_span{
+	color: beige;
+}
+.selector-struktura {
+	color:chartreuse;
+}
+.selectot-zirochka {
+	color:blueviolet
+}
+.selector-all {
+	color: cornflowerblue;
+}
+.selector-a {
+	color: crimson;
+}
+.selector-text {
+	color: deepskyblue;
+}
+#selector-ID{
+	color: rgb(68, 0, 255);
+}
+.selector-text-all {
+	color: deeppink;
+}
+.lesson {
+	color: coral;
+}
+.selector-text-all-p {
+	color: grey;
+}
+.selector-text-lesson {
+	color: hotpink;
+}
+.selector-p-floor1 {
+	color: aquamarine;
+}
+.selector-floor-tilda {
+	color: blueviolet;
+}
+.selector-floor-plus {
+	color: darkgoldenrod;
+}
+
+
+
+
+
+

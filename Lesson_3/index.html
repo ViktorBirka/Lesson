@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<p>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="Правильный CSS!" />
+		</a>
+	</p>
+	<header>
+		<div class="logo">HTML5
+			BOOK</div>
+	</header>
+
+	<div class="main">
+
+		<h1>1.2. HTML-элементы</h1>
+
+		<div class="text">HTML-элементы — основа языка HTML. Каждый HTML-документ состоит из дерева HTML-элементов и
+			текста. Каждый HTML-элемент обозначается начальным (открывающим) и конечным (закрывающим) тегом. Открывающий и
+			закрывающий теги содержат имя элемента.
+
+			Все HTML-элементы делятся на пять типов:</div>
+		<ul>
+			<li>пустые элементы — &lt;area&gt;,
+				&lt;base&gt;, &lt;br&gt;,
+				&lt;col&gt;, &lt;embed&gt;,
+				&lt;hr&gt;, &lt;img&gt;, &lt;input&gt;,
+				&lt;link&gt;,
+				&lt;menuitem&gt;,
+				&lt;meta&gt;,
+				&lt;param&gt;,
+				&lt;source&gt;,
+				&lt;track&gt;, &lt;wbr&gt;;
+			</li>
+			<li>элементы с неформатированным текстом —
+				&lt;script&gt;, &lt;style&gt;
+			</li>
+			<li>
+				элементы, выводящие неформатированный текст — &lt;textarea &gt;, &lt;title&gt;
+			</li>
+			<li>элементы из другого пространства имён — MathML и SVG;</li>
+			<li>обычные элементы — все остальные элементы.</li>
+		</ul>
+
+		<h2>Анатомія CSS</h2>
+		<hr>
+		<div class="selector-struktura fontsize">
+			Селектор - запит (пошук) елемента в HTML файлі до якого підключений данний CSS-файл<br>
+			селектор{<br>
+			css параметр;<br>
+			css параметр;<br>
+			css параметр;<br>
+			...<br>
+			css параметр;<br>
+			}
+		</div>
+		<hr>
+		<div class="text fontsize">
+			CSS параметр:<br>
+			css властивість: значення властивості;<br>
+		</div>
+		<hr>
+		<h4>Типи селекторів </h4>
+		<div class="selectot-zirochka"> Селектор зірочка<br>
+			Шукаємо (робимо запит) до всіх об'єктів<br>
+			* {<br>
+
+			}
+		</div>
+		<hr>
+		<h4>Тип №1. Селектор тегу</h4>
+		Шукаємо (робимо запит) по назві тегу<br>
+		Приклад<br>
+		Звертаємось/описуємо (шукаємо, робимо запит) до УСІХ<br>
+		тегів DIV на сторінці
+		<div class="selector-all">
+			div {<br>
+			color: red;<br>
+			}
+		</div>
+		<hr>
+		<div class="selector-a">
+			<p><a href="#">Звертаємось/описуємо (шукаємо, робимо запит) до УСІХ
+					тегів A на сторінці</a><br>
+			</p>
+			<p>
+				a{<br>
+				color: green;<br>
+				}
+			</p>
+		</div>
+		<hr>
+
+		<h4>Тип №2. Селектор класу </h4>
+		<div class="selector-text fontsize">
+			<p>
+				<span class="selector-text_span"><mark>Звертаємось/описуємо</mark></span><br>
+				(шукаємо, робимо запит) до УСІХ<br>
+				тегів з класом text на сторінці<br>
+			</p>
+			<p>
+				.text{<br>
+				color: red;<br>
+				}
+			</p>
+		</div>
+		<hr>
+		<h4>Тип №3. Селектор ID</h4>
+		<div id="selector-ID">
+			Шукаємо (робимо запит по назві ID)<br>
+			спочатку # потім ім'я ID<br>
+			#red{<br>
+			color: red;<br>
+			}
+		</div>
+		<hr>
+		<h4>КОМБІНАЦІЇ СЕЛЕКТОРІВ</h4>
+		<div class="selector-text-all">
+			<p>
+				Усі DIV з класом text<br>
+				div.text{<br>
+				}
+			</p>
+			<p>
+				Усі теги з класами lesson<br>
+				та text одночасно<br>
+				НІЯКИХ ПРОБІЛІВ МІЖ КЛАСАМИ!<br>
+
+				.lesson.text {<br>
+				color: green;<br>
+				}
+			</p>
+		</div>
+		<hr>
+		<div class="lesson text">
+			Звертаємось відразу до об'єктів з класом lesson та<br>
+			до об'єктів з класом text<br>
+			.lesson,<br>
+			.text{<br>
+			color: red;<br>
+			}
+		</div>
+		<hr>
+		<h4>КАСКАДНІСТЬ (ВКЛАДЕНІСТЬ) СЕЛЕКТОРІВ</h4>
+		<div class="selector-text-all-p">
+			ОБОВ'ЯЗКОВО ПРОБІЛ МІЖ ЕЛЕМЕНТАМИ<br>
+			Усі теги P в середені об'єктів з класом text<br>
+			.text p{<br>
+			color: red;<br>
+			}
+		</div>
+		<hr>
+		<div class=" selector-text-lesson">
+			Усі об'єкти з класом lesson в середені об'єктів з класом text<br>
+			.text .lesson {<br>
+			}
+			<div>
+				Усі об'єкти в середені<br>
+				об'єктів з класом text<br>
+				.text * {<br>
+				}
+			</div>
+			<hr>
+			<div class="selector-p-floor1">
+				Усі теги P першого рівня (безпосередні) в середені об'єктів з класом text<br>
+				.text > p {<br>
+				color: red;<br>
+				}
+			</div>
+			<hr>
+			<div class="selector-floor-tilda">
+				Усі теги P які знаходяться<br>
+				далі по коду після об'єктів з класом text<br>
+				та мають той самий рівень вкладеності<br>
+				.text ~ p{<br>
+				color: red;<br>
+				}
+			</div>
+			<hr>
+			<div class="selector-floor-plus">
+				Тег P який знаходяться беспосередньо<br>
+				далі по коду після об'єктів з класом text<br>
+				та мають той самий рівень вкладеності<br>
+				.text + p {<br>
+				color: red;<br>
+				}
+			</div>
+			<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+
+	</div>
+
+	<footer></footer>
+</body>
+
+</html>
