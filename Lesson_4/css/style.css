@@ -1,0 +1,102 @@
+/* Подключаем шрифт Larsseit */
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit.woff2") format("woff2"), url("../fonts/Larsseit/Larsseit.woff") format("woff");
+	font-display: swap;
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Regular.woff2") format("woff2"), url("../fonts/Larsseit/Larsseit-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Medium.woff2") format("woff2"), url("../fonts/Larsseit/Larsseit-Medium.woff2") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Подключаем шрифт Lato */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Black.woff2") format("woff2"), url("../fonts/Lato/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+ .text {
+	font-family: "Lato";
+	font-weight: 900;
+}
+.text {
+	font-family: "Roboto";
+	font-weight: 500;
+	color: blueviolet;
+}
+.text-vibiraem-spinning {
+	font-family: "Larsseit";
+	font-weight: 900;
+	color: blue;
+}
+.text--font--Larsseit--Regular {
+	font-family: "Larsseit";
+	font-weight: 500;
+	color: rgb(27, 238, 62);
+}
+.text--osobennosti {
+	font-family: "Larsseit";
+	font-weight: 400;
+	color: rgb(238, 27, 108);
+}
+.text--tehnika {
+	font-family: "Larsseit";
+	font-weight: 500;
+	color: rgb(243, 228, 11);
+}
+.text--provodki {
+	font-family: "Lato";
+	font-weight: 400;
+	color: rgb(9, 231, 247);
+}
+.text--podsechka {
+	font-family: "Lato";
+	font-weight: 700;
+	color: rgb(47, 100, 104);
+}
+.text--lodka {
+	font-family: "Lato";
+	font-weight: 900;
+	color: rgb(82, 83, 24);
+}
+
+
+
