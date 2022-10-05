@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_8</title>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div class="container">
+			<div class="container-test-hover">
+				<div class=" text hover-text">
+					Тест псевдокласса :hover<br>
+					При наведении на этот текст - текст + рамка станут красными.
+				</div>
+				<div class="text active-text">
+					Тест псевдокласса :active<br>
+					При НАЖАТИИ на этот текст - текст + рамка станут зелёными и увеличатся на 20%.
+				</div>
+				<div class="text visibility-text">
+					<div class="text_main">visibility-text:active</div>
+					<div class="text_main">
+						.visibility-text:active{<br>
+						visibility: hidden;<br>
+						}<br>
+						Скрывает блок, оставляя за ним зарезервированное место. Нельзя взаимодействовать.
+					</div>
+				</div>
+				<div class="text visibility-text_display-none">
+					<div class="text_main">visibility-text:active+display:none;</div>
+					<div class="text_main">
+						.visibility-text_display-none:active{<br>
+						visibility: hidden;<br>
+						display: none;<br>
+						}<br>
+						Убирает блок. Браузер не опрашивает убранное место.
+					</div>
+				</div>
+				<div class="text text_main-01">
+					<a href="#">"Это ссылка!<br>
+						После перехода по ссылке - текст меняет цвет на указанный в CSS</a>
+				</div>
+				<div class="text focus-text">
+					<div class="text_main"><a href="#text-target">focus</a></div>
+					<div id="text-target" class="text_main text-target">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vero quia
+						eveniet quas
+						quidem
+						adipisci minus quaerat sint. Aperiam perspiciatis explicabo id suscipit praesentium? Iusto ipsa
+						sequi
+						inventore facilis nulla!
+					</div>
+				</div>
+				<div class="text text-p">
+					<p>P1__Звернення до першого елементу в коді <br>
+						.text-p p:first-child{<br>
+						text-transform: uppercase;<br>
+						}<br>
+					</p>
+					<p>P2__Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, hic consequuntur id
+						fugiat saepe facere iusto animi omnis quibusdam! Cumque fuga eaque quod fugit ullam hic minus
+						laborum provident.</p>
+					<p>P3__Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, hic consequuntur id
+						fugiat saepe facere iusto animi omnis quibusdam! Cumque fuga eaque quod fugit ullam hic minus
+						laborum provident.</p>
+					<p>P4__:nth-child(порядковий номер елементу)<br>
+						Звернення до конкретного елементу в коді<br>
+						.text-p p:nth-child(4){<br>
+						background-color: #43e7df;<br>
+						}</p>
+					<p>P5__Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, hic consequuntur id
+						fugiat saepe facere iusto animi omnis quibusdam! Cumque fuga eaque quod fugit ullam hic minus
+						laborum provident.</p>
+					<p>P6__Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, hic consequuntur id
+						fugiat saepe facere iusto animi omnis quibusdam! Cumque fuga eaque quod fugit ullam hic minus
+						laborum provident.</p>
+					<p>P7__Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, hic consequuntur id
+						fugiat saepe facere iusto animi omnis quibusdam! Cumque fuga eaque quod fugit ullam hic minus
+						laborum provident.</p>
+					<p>P8__Звернення до останього елементу в коді<br>
+						.text-p p:last-child {<br>
+						color: rgb(224, 133, 13);<br>
+						}</p>
+				</div>
+				<div class="text text-p-01">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, incidunt sequi optio sed qui, non,
+						minus eos iure possimus at dolore? Ad, quibusdam? At officiis fugiat ducimus ullam accusamus
+						molestiae!</p>
+				</div>
+				<div class="list">
+					<ol>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="lesson_0">
+			<h3>Lesson 8+9</h3>
+
+			<!-- Шаблон для вставок картинок
+<picture>
+	<source srcset="#" type="image/webp">
+	<img src="#" alt="">
+</picture> -->
+			<div class="wriper">
+				<h2>About the course</h2>
+				<div class="lesson-text">
+					<p>Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis,
+						felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas
+						libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim
+						montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium.
+						Lorem risus nunc tincidunt tortor, mi nulla pellentesque</p>
+				</div>
+				<h3>You will learn:</h3>
+				<div class="list">
+					<ul>
+						<li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+						<li>Vulputate placerat amet pulvinar lorem nisl.</li>
+						<li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+						<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+						<li>Fringilla in nec risus congue venenatis pretium posuere nec.</li>
+						<li>Cursus eu pretium, vulputate tempus quam massa sed at.</li>
+					</ul>
+				</div>
+				<h4>Course curator</h4>
+				<h2 class="title-2">CodyO Fisher</h2>
+				<div class="lesson-text-1">
+					<p>Senior UX designer in IT Product Company</p>
+				</div>
+				<div class="list-2">
+					<ul>
+						<li>4.9 rate</li>
+						<li>4 courses</li>
+						<li>350 students</li>
+					</ul>
+					<div class="lesson-text">
+						<p>Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis,
+							vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat.
+							Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie
+							laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum
+							posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+					</div>
+				</div>
+			</div>
+			<div class="lesson-9">
+				<h2>lesson_9</h2>
+				<div class="img">
+					<picture>
+						<source srcset="img/2022-10-06_1-10-54.webp" type="image/webp">
+						<img src="img/2022-10-06_1-08-46.jpg" alt="">
+					</picture>
+					<picture>
+						<source srcset="img/2022-10-06_1-08-46.webp" type="image/webp">
+						<img src="img/2022-10-06_1-10-54.jpg" alt="image">
+					</picture>
+					<picture>
+						<source srcset="img/2022-10-06_1-12-13.webp" type="image/webp">
+						<img src="img/2022-10-06_1-12-13.jpg" alt="image">
+					</picture>
+					<picture>
+						<source srcset="img/2022-10-06_1-13-27.webp" type="image/webp">
+						<img src="img/2022-10-06_1-13-27.jpg" alt="image">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+
+</body>
+
+</html>
